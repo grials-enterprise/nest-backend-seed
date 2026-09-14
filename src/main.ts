@@ -1,5 +1,6 @@
 import { NestFactory } from '@nestjs/core';
-import { ValidationPipe, VersioningType } from '@nestjs/common';
+import { VersioningType } from '@nestjs/common';
+// import {ValidationPipe, } from '@nestjs/common';
 import { AppModule } from './app.module.js';
 import { AppConfigService } from './config/config.service.js';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';

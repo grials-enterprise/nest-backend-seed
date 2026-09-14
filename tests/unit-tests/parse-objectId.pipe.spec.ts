@@ -1,6 +1,6 @@
 import * as assert from 'assert';
 import { HttpException } from '@nestjs/common';
-import { ParseObjectIdPipe } from '../../src/common/pipes/parse-objectId.pipe.js';
+import { ParseObjectIdPipe } from '../../src/common/pipes/parse-object-id.pipe.js';
 
 describe('ParseObjectIdPipe', () => {
   const pipe = new ParseObjectIdPipe();
@@ -13,8 +13,7 @@ describe('ParseObjectIdPipe', () => {
   it('throws HttpException 400 when the id is invalid', () => {
     assert.throws(
       () => pipe.transform('not-valid'),
-      (err: unknown) =>
-        err instanceof HttpException && err.getStatus() === 400,
+      (err: unknown) => err instanceof HttpException && err.getStatus() === 400,
     );
   });
 });

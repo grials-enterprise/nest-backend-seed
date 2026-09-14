@@ -20,7 +20,7 @@ import {
 import { DefaultsService } from './defaults.service.js';
 import { CryptoDefaultsInterceptor } from './crypto.interceptor.js';
 import { ResponseMessage } from '../common/decorators/response-message.decorator.js';
-import { ParseObjectIdPipe } from '../common/pipes/parse-objectId.pipe.js';
+import { ParseObjectIdPipe } from '../common/pipes/parse-object-id.pipe.js';
 import { AjvValidationPipe } from '../common/pipes/ajv-validation.pipe.js';
 import { defaultSchema } from '../common/ajv/schemas/default.schema.js';
 
